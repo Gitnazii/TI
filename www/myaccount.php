@@ -40,14 +40,17 @@ if(isset($_POST['pass1']))
 					$rezultat = @$conn->query("SELECT user_id, login,name,surname, email FROM users WHERE user_id=".$_SESSION['user_id']);
 					$wiersz=$rezultat->fetch_assoc();
 					if(!$rezultat) throw new Exception($conn->error);
-					echo '<h1>'.$wiersz['name'].' '.$wiersz['surname'].'</h1>';
+					?>
+					<div id=myaccount>
+					<?php
+					echo '</br><h1>'.$wiersz['name'].' '.$wiersz['surname'].'</h1>';
 					
 					if(!isset($_SESSION['e_pass']) && isset($pass_hash))
 					{
 						$conn->query("UPDATE users SET password='".$pass_hash."' WHERE user_id=".$_SESSION['user_id']);
 						
 					}
-					echo '<form name=ch_pass method="post" ><input type="hidden" name="change" value=1><input name="ch_pass" type="submit" id="ch_pass" value="Change password"></form>';
+					echo '<form name=ch_pass method="post" ><input type="hidden" name="change" value=1><input name="ch_pass" type="submit" id="ch_pass" value="Change password"></form></br>';
 					
 					if($change==1)
 					{
@@ -58,8 +61,11 @@ if(isset($_POST['pass1']))
 								echo '<div class="error">'.$_SESSION['e_pass'].'</div>';
 								unset($_SESSION['e_pass']);
 							}
-						echo '<input name="add" type="submit" id="add" value="Change"></form>';
+						echo '</br><input name="add" type="submit" id="add" value="Change"></form>';
 					}
+					?>
+					</div>
+					<?php
 				}
 		}
 		catch(Exception $e)

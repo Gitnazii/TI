@@ -14,6 +14,7 @@ if($_SESSION['root'])
 {
 	echo '
 <form name="form1" method="post" enctype="multipart/form-data" action="addnews.php ">
+</br>
   <table class="center">
     <tr>
       <td width="50%">Name</td>

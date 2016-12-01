@@ -25,7 +25,7 @@ mysqli_report(MYSQLI_REPORT_STRICT);
 					}
 					if (mysqli_num_rows($result) > 0)
 					{
-						echo '<table class="center" border=1px><tr><th>user id</th><th>email</th><th>login</th><th>name</th><th>surname</th><th></th></tr>';
+						echo '</br><table class="center" border=1px><tr><th>user id</th><th>email</th><th>login</th><th>name</th><th>surname</th><th></th></tr>';
 						while($row = $result->fetch_assoc())
 						{
 						echo '<tr> <td>'.$row['user_id'].'</td> </td> <td>'.$row['email'].'</td> <td>'.$row['login'].'</td> <td>'.$row['name'].'</td> <td>'.$row['surname'].'</td> <td><form name="delete" method="post" action="index.php?subpage=13 "><input type="hidden" name="id" value="'.$row['user_id'].'"><input type="hidden" name="a" value="2"><input name="add" type="submit" id="add" value="Delete"></form></td></tr>';

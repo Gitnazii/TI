@@ -29,7 +29,7 @@
 						if($id==1)
 						{	
 							echo '</br></br>';
-							echo '<table border=1px><tr><th colspan="5">'.$day.'</th></tr>';
+							echo '<table align=center border=1px><tr><th colspan="5">'.$day.'</th></tr>';
 							echo '<tr><th></th><th>Normal ticket until 3pm</th><th>Reduced ticket until 3pm</th><th>Normal ticket after 3pm</th><th>Reduced ticket after 3pm</th></tr>';
 							echo '<tr><th>60 minutes</th><th>'.$normal_ticket_until3pm.'</th><th>'.$reduced_ticket_until3pm.'</th><th>'.$normal_ticket_after3pm.'</th><th>'.$reduced_ticket_after3pm.'</th></tr>';
 						}
@@ -47,7 +47,7 @@
 						
 						if($id==4)
 						{	
-							echo '<table border=1px><tr><th colspan="5">'.$day.'</th></tr>';
+							echo '<table align=center border=1px><tr><th colspan="5">'.$day.'</th></tr>';
 							echo '<tr><th></th><th>Normal ticket until 3pm</th><th>Reduced ticket until 3pm</th><th>Normal ticket after 3pm</th><th>Reduced ticket after 3pm</th></tr>';
 							echo '<tr><th>60 minutes</th><th>'.$normal_ticket_until3pm.'</th><th>'.$reduced_ticket_until3pm.'</th><th>'.$normal_ticket_after3pm.'</th><th>'.$reduced_ticket_after3pm.'</th></tr>';
 						}

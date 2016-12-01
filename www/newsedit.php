@@ -28,7 +28,7 @@ if(!$result){
    exit();
 }
 if (mysqli_num_rows($result) > 0){
-	echo '<table class="center" border=1px><tr><th>Id</th><th>Headline</th><th>Autor</th><th>Date</th><th></th><th></th></tr>';
+	echo '</br><table class="center" border=1px><tr><th>Id</th><th>Headline</th><th>Autor</th><th>Date</th><th></th><th></th></tr>';
     while($row = $result->fetch_assoc())
     {
     echo '<tr> <td>'.$row['id'].'</td> </td> <td>'.$row['headline'].'</td> <td>'.$row['name'].'</td><td> '.$row['timestamp'].'</td> <td><form name="edit" method="post" action="index.php?subpage=8"><input type="hidden" name="id" value="'.$row['id'].'"><input type="hidden" name="a" value="1"><input name="add" type="submit" id="add" value="Edit"></form></td> <td><form name="delete" method="post" action="index.php?subpage=8 "><input type="hidden" name="id" value="'.$row['id'].'"><input type="hidden" name="a" value="2"><input name="add" type="submit" id="add" value="Delete"></form></tr>';

@@ -28,7 +28,7 @@ if(!$result){
    exit();
 }
 if (mysqli_num_rows($result) > 0){
-	echo '<table class="center" border=1px><tr><th>Image\'s ID</th><th>Image\'s path</th><th>Submission Date</th><th></th></tr>';
+	echo '</br><table class="center" border=1px><tr><th>Image\'s ID</th><th>Image\'s path</th><th>Submission Date</th><th></th></tr>';
     while($row = $result->fetch_assoc())
     {
     echo '<tr> <td>'.$row['images_id'].'</td> </td> <td>'.$row['images_path'].'</td> <td>'.$row['submission_date'].'</td><td><form name="delete" method="post" action="index.php?subpage=10 "><input type="hidden" name="images_id" value="'.$row['images_id'].'"><input name="add" type="submit" id="add" value="Delete"></form></tr>';

@@ -27,7 +27,7 @@
 						$email=$row["email"];
 					
 					echo '</br></br></br></br></br></br>';
-					echo '<table style="text-align: left; margin: 0 auto;"><tr><th>'.$street.'</th></tr><tr><th>'.$postal_code.' '.$city.'</th></tr><tr><th>'.'Phone number:  '.$phone_number1.'</th></tr><tr><th>'.'Phone number:  '.$phone_number2.'</th></tr><tr><th>'.'e-mail:  '.$email.'</th></tr></table>';
+					echo '<table class=contact style="text-align: left; margin: 0 auto;"><tr class=contact><th class=contact>'.$street.'</th></tr><tr class=contact><th class=contact>'.$postal_code.' '.$city.'</th></tr><tr class=contact><th class=contact>'.'Phone number:  '.$phone_number1.'</th></tr><tr class=contact><th class=contact>'.'Phone number:  '.$phone_number2.'</th></tr><tr class=contact><th class=contact>'.'e-mail:  '.$email.'</th></tr></table>';
 					}
 				}else{
 				

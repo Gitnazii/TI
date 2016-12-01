@@ -150,22 +150,26 @@ body
 
 headline
 {
-	font-size: 25px;
+	/*font-size: 25px;*/
+	font:  normal 400 25px/25px "Arial", serif; color:#f5f5f5; text-shadow:0px 0px 4px #000000;
 }
 
 timestamp
 {
-	font-size: 13px;
+	/*font-size: 13px;*/
+	font:  normal 400 13px/13px "Arial", serif; color:#f5f5f5; text-shadow:0px 0px 4px #000000;
 }
 
 story
 {
-	font-size: 18px;
+	/*font-size: 18px;*/
+	font:  normal 400 18px/18px "Droid Serif", serif; color:#f5f5f5; text-shadow:0px 0px 3px #000000;
 }
 
 name
 {
-	font-size: 15px;
+	/*font-size: 15px;*/
+	font:  normal 400 15px/15px "Arial", serif; color:#f5f5f5; text-shadow:0px 0px 4px #000000;
 }
 
 
@@ -203,13 +207,28 @@ name
 
 #footer
 {
-	background-color: #444444;
+	background-color: #333333;
 	width: 1000px;
 	height: 50px;
-	position: relative;
+	line-height: 50px;
 	text-align: center;
 	vertical-align: middle;
-	line-height: 50px;
+	font: "Arial" serif;
+	font-size: 25px;
+	color:#010101;
+	text-shadow: 0px 0px 1px #000000;
+}
+
+#signin
+{
+	text-align: center;
+}
+
+#captcha
+{
+	margin: 0 auto;
+	width: 38%;
+	display: block;
 }
 
 @-webkit-keyframes fade {
@@ -249,4 +268,46 @@ ul.bjqs-controls.v-centered li a:hover{
   height: 600px;
   position: relative;
   margin: auto;
+}
+
+
+table
+{
+    background-color: #666666;
+	border:solid black 1px;
+	font:  normal 400 13px/13px "Arial", serif;
+	color:#f5f5f5;
+	text-shadow:0px 0px 4px #000000;
+}
+
+td, th
+{
+	border:solid black 1px;
+	padding: 5px;
+}
+tr:nth-child(even){background-color: #888888;}
+
+table.contact
+{
+    background-color: #666666;
+	border:solid black 2px;
+	border-radius: 3px;
+	width: 300px;
+	font:  normal 400 15px/15px "Arial", serif;
+	color:#f5f5f5;
+	text-shadow:0px 0px 4px #000000;
+
+}
+
+td.contact, th.contact
+{
+	border:solid black 1px;
+	border-radius: 2px;
+	padding: 7px;
+}
+tr.contact:nth-child(even){background-color: #888888;}
+
+#myaccount
+{
+	text-align:center;
 }

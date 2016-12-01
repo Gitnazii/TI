@@ -14,8 +14,8 @@ if($_SESSION['root'])
 {
 	echo '
 	<form action="saveimage.php" enctype="multipart/form-data" method="post">
-
-<table style="border-collapse: collapse; font: 12px Tahoma;" border="1" cellspacing="5" cellpadding="5">
+</br></br>
+<table style="border-collapse: collapse; font: 12px Tahoma;" border="1" cellspacing="5" cellpadding="5" align="center">
 <tbody><tr>
 <td>
 <input name="uploadedimage" type="file">

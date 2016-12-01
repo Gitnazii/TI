@@ -25,9 +25,9 @@
 						$name=nl2br($name);
 						$description=nl2br($description);
 					
-					echo "<div style='text-align: center; margin: 5px 5px;'><headline>".$name."</headline></div><br><br>";
+					echo "<div style='text-align: center; margin: 5px 5px;'><headline>".$name."</headline></div></br></br>";
 					echo "<div style='text-align: justify; text-justify: inter-word; margin: 5px 5px;'><story>".$description."</story></div>";
-					echo "<div style='text-align: right; margin: 5px 5px;'><name>"."Price: ".$price."</name></div><br>";
+					echo "<div style='text-align: right; margin: 5px 5px;'><name>"."Price: ".$price."</name></div></br></br></br>";
 					}
 				}else{
 				

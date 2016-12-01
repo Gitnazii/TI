@@ -3,6 +3,39 @@
 <title>Sign in</title>
 <meta charset="utf-8" />
 <link rel="stylesheet" href="style.css" type="text/css" />
+<style>
+/* unvisited link */
+a:link {
+    color: black;
+	font-weight: 500;
+	text-decoration: none;
+	text-shadow: 0px 0px 1px #000000;
+}
+
+/* visited link */
+a:visited {
+    color: black;
+	font-weight: 500;
+	text-decoration: none;
+	text-shadow: 0px 0px 1px #000000;
+}
+
+/* mouse over link */
+a:hover {
+    color: black;
+	font-weight: 500;
+	text-decoration: underline;
+	text-shadow: 0px 0px 1px #000000;
+}
+
+/* selected link */
+a:active {
+    color: black;
+	font-weight: 500;
+	text-decoration: underline;
+	text-shadow: 0px 0px 1px #000000;
+}
+</style>
 <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
@@ -155,8 +188,9 @@
 ?>
 
 <form name="form1" method="post" class="center" >
- 
+ <div id="signin">
 
+ </br>
     Nickname <br>
 	 <input type='text' value="<?php
 			if (isset($_SESSION['fr_nick']))
@@ -243,7 +277,7 @@
 		unset($_SESSION['e_surname']);
 	}
 	?>
-    <label><input type='checkbox' name='terms'> I accept terms and conditions</label><br>
+    <label></br><input type='checkbox' name='terms'><a target="_blank" href="regulamin.txt">I accept terms and conditions</a></label></br>
 	<?php
 	  if(isset($_SESSION['e_terms']))
 	{
@@ -251,7 +285,7 @@
 		unset($_SESSION['e_terms']);
 	}
 	?>
-	 <div class="g-recaptcha" data-sitekey="6LfxJAwUAAAAADNZ1V7N_t04jq362diC7q1gqb2s"></div><br>
+	 </br><div id="captcha"><div class="g-recaptcha" data-sitekey="6LfxJAwUAAAAADNZ1V7N_t04jq362diC7q1gqb2s"></div></div><br>
 	 <?php
 	  if(isset($_SESSION['e_bot']))
 	{
@@ -266,7 +300,7 @@
           
 		  
    
-  
+  </div>
   </form> 
 
  
